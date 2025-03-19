@@ -13,8 +13,8 @@ def main():
         password=PASSWORD
     )
 
-    # bank_id = input("Digite o numero do banco de dados")
-    bank_id = '100217'
+    bank_id = input("Digite o numero do banco de dados: ")
+    # bank_id = '114274'
     client.set_bank_id(bank_id)
 
     while True:

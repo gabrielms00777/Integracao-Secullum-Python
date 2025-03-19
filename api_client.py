@@ -81,6 +81,7 @@ class APIConfig:
     def post(self, endpoint, data):
         headers = self.get_headers()
         response = requests.post(f"{self.api_url}/{endpoint}",json=data, headers=headers)
+        # print(response.json())
         response.raise_for_status()
         return response.status_code
     
